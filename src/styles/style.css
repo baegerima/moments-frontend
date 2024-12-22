@@ -1,0 +1,151 @@
+/* Общие стили для всех страниц */
+body {
+  font-family: 'Georgia', serif;  /* Используем классический шрифт */
+  margin: 0;
+  padding: 0;
+  background-color: #f4f0e6;  /* Светлый, теплый фон */
+  color: #333;  /* Темный цвет текста */
+}
+
+h1, h2, h3 {
+  font-weight: normal;
+  color: #3e3e3e;  /* Темные оттенки для заголовков */
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.7;
+  color: #4f4f4f;  /* Теплый серый оттенок */
+  margin-bottom: 20px;
+}
+
+/* Контейнеры */
+.container {
+  width: 80%;
+  max-width: 700px;
+  margin: 50px auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border: 1px solid #dcdcdc;
+  border-radius: 8px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+/* Заголовки и текстовые поля */
+input, textarea, button {
+  font-size: 16px;
+  padding: 12px;
+  border-radius: 4px;
+  border: 1px solid #b8b8b8;
+  margin-bottom: 20px;
+  width: 100%;
+  outline: none;
+  background-color: #fafafa;  /* Легкий нейтральный оттенок фона для полей */
+}
+
+input:focus, textarea:focus, button:focus {
+  border-color: #8d8d8d;  /* Более темный цвет для фокуса */
+}
+
+/* Кнопка */
+button {
+  background-color: #4a4a4a;  /* Темно-серый для кнопки */
+  color: white;
+  cursor: pointer;
+  padding: 12px 20px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #2e2e2e;  /* Еще более темный серый при наведении */
+}
+
+/* Стиль для сообщений */
+.message {
+  text-align: center;
+  color: green;
+  font-weight: bold;
+}
+
+.error-message {
+  color: red;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Адаптивность для мобильных устройств */
+@media (max-width: 768px) {
+  .container {
+      width: 100%;
+      margin: 20px;
+  }
+}
+
+/* Стиль для главной страницы */
+.home {
+  text-align: center;
+}
+
+.home h1 {
+  font-size: 2.2rem;
+  margin-bottom: 20px;
+  color: #2e2e2e;
+}
+
+.home p {
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  color: #4f4f4f;
+}
+
+/* Стиль для страницы логина, регистрации и сброса пароля */
+.auth-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-container h2 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  color: #3e3e3e;
+}
+
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.auth-form input {
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.auth-form button {
+  margin-top: 10px;
+  padding: 15px;
+  font-size: 1rem;
+  background-color: #4a4a4a;
+  font-weight: bold;
+}
+
+.auth-form .forgot-password {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.auth-form .forgot-password:hover {
+  text-decoration: underline;
+  color: #4a4a4a;  /* Изменяем цвет на темный */
+}
+
+/* Акценты */
+.accent {
+  color: #8b7d7d;  /* Теплый серо-коричневый для акцентов */
+}
+
